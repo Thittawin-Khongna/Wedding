@@ -470,6 +470,14 @@ header {
         width: 40vw; /* ปรับขนาดปุ่มให้ใหญ่ขึ้นในมือถือ */
         border-radius: 2vw;
     }
+    .button_map{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw; /* เพิ่มระยะห่างด้านบน */
+    border-color: #121331; /* สีกรอบปุ่ม */
+    border-radius: 0.5vw; /* มุมโค้งของปุ่ม */
+    padding-bottom: 20vw; /* เพิ่มระยะห่างด้านล่าง */
+    }
 }
 
 
