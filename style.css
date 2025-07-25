@@ -1,0 +1,476 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #000000;
+    margin: 0; /* ลบ margin เริ่มต้น */
+    padding: 0; /* ลบ padding เริ่มต้น */
+    width: 100vw; /* เต็มความกว้างของหน้าจอ */
+    height: 100vh; /* เต็มความสูงของหน้าจอ */
+    line-height: 0;
+    margin: 0;
+    padding-bottom: 60vw; /* ระยะห่างเผื่อให้เมนูไม่ทับเนื้อหา */
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #121331;
+  display: flex;
+  /* justify-content: space-around; */
+  padding: 10px 0;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10vw; /* มุมโค้งด้านบนซ้าย */
+    border-top-right-radius: 10vw; /* มุมโค้งด้านบนขวา */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+nav a:hover {
+  background-color: #555;
+  border-radius: 8px;
+}
+
+.icon {
+  width: 4vw;
+  height: 4vw;
+  display: inline-block;
+  background-size: cover;
+  padding-left: 2vw; /* เพิ่มระยะห่างด้านซ้าย */
+  padding-right: 2vw; /* เพิ่มระยะห่างด้านขวา */
+}
+
+.content {
+  padding: 20px;
+}
+
+
+.First_impression {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.image_First {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#countdown {
+    position: absolute;
+    top: 50%; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    left: 50%; /* จัดให้อยู่ตรงกลางแนวนอน */
+    transform: translate(-50%, -50%); /* ปรับตำแหน่งให้อยู่ตรงกลาง */
+    color: white; /* เปลี่ยนสีข้อความให้อ่านง่าย */
+    font-size: 2vw; /* ปรับขนาดข้อความ */
+    text-align: center;
+    margin-top: 10vw; /* เพิ่มระยะห่างด้านบน */
+    font-family: "Sour Gummy", sans-serif; /* ใช้ฟอนต์ Sour Gummy */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    margin-top: 12vw;
+    gap: 5vw;
+}
+
+#countdown .time-block {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20vw; /* เพิ่มระยะห่างด้านบน */
+}
+
+.gap{
+    height: 3vw; /* เพิ่มระยะห่างด้านบน */
+    width: 100%; /* กว้างเต็มหน้าจอ */
+    background-color: #121331; /* ทำให้พื้นหลังโปร่งใส */
+}
+
+.container {
+    margin: 0; /* ลบ margin เริ่มต้น */
+    padding: 0; /* ลบ padding เริ่มต้น */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative
+}
+
+header {
+    margin-bottom: 5%; /* แปลงจาก 30px */
+}
+
+.Head_Web {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw; /* แปลงจาก 5% */
+    align-items: center;
+    margin-bottom: 3%; /* แปลงจาก 20px */
+    padding: 1vw; /* แปลงจาก 10px */
+}
+
+.name_OM {
+    display: flex; /* ใช้ Flexbox */
+    flex-direction: column; /* จัดให้อยู่ในคอลัมน์เดียวกัน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+    gap: 0.5vw; /* เพิ่มระยะห่างระหว่างข้อความและรูปภาพ */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลางในแนวนอน */
+    margin-top: 5vw; /* เพิ่มระยะห่างด้านบน */
+}
+
+.name_and_PMam {
+    font-size: 2vw; /* แปลงจาก 80% */
+    color: #826653;
+    vertical-align: baseline;
+    display: inline;
+}
+
+.name_POat {
+    font-size: 7vw; /* แปลงจาก 100% */
+    color: #121331; /* สีข้อความ */
+    margin: 0; /* ลบระยะห่างที่ไม่จำเป็น */
+    line-height: 0.5; /* ปรับระยะห่างระหว่างบรรทัด */
+}
+
+.name_and {
+    font-size: 2vw; /* ขนาดตัวอักษรเล็กกว่า */
+    color: #121331;
+    vertical-align: middle; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    margin-right: 1vw; /* เพิ่มระยะห่างเล็กน้อยระหว่าง "and" และ "Mattana" */
+    display: inline; /* บังคับให้อยู่ในบรรทัดเดียวกัน */
+    line-height: 1; /* ปรับระยะห่างระหว่างบรรทัด */
+}
+
+.name_PMam {
+    font-size: 7vw; /* ขนาดตัวอักษรปกติ */
+    color: #121331;
+    vertical-align: middle; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    display: inline; /* บังคับให้อยู่ในบรรทัดเดียวกัน */
+    margin-left: 0; /* ลบระยะห่างที่ไม่จำเป็น */
+    line-height: 1; /* ปรับระยะห่างระหว่างบรรทัด */
+}
+
+.image1 {
+    width: 30vw; /* แปลงจาก 40% */
+    margin-right: 5vw; /* แปลงจาก 5% */
+    border-radius: 1vw; /* แปลงจาก 2% */
+    box-shadow: #121331 0vw 0vw 2vw; /* เพิ่มเงาให้กับภาพ */
+    margin-top: 5vw;
+
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.image2 {
+    width: 20vw; /* แปลงจาก 40% */
+}
+
+.text{
+    font-size: 1.5vw; /* แปลงจาก 30px */
+    color: #121331;
+    margin-top: 1vw; /* แปลงจาก 2% */
+    line-height: 1.5; /* ปรับระยะห่างระหว่างบรรทัด */
+    font-family: "Shippori Mincho", serif; /* ใช้ฟอนต์ Shippori Mincho */
+    font-size: 1vw;
+    padding-bottom: 2vw;
+}
+
+.people{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3vw;
+}
+
+.information_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.people_image {
+    width: 20vw;
+    border-radius: 3vw;
+}
+
+.information_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw; /* แปลงจาก 4% */
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2vw; /* แปลงจาก 30px */
+    color: #121331;
+    padding-bottom: 2vw;
+}
+
+.img_schedule{
+    width: 50vw;
+    height: auto;
+}
+
+.theme{
+    padding-bottom: 5vw;
+}
+
+.img_theme{
+    width: 4vw;
+    height: auto;
+    border-radius: 50vw;
+    display: center /* จัดให้อยู่ตรงกลาง */;
+    margin-right: 1vw; /* เพิ่มระยะห่างระหว่างรูปภาพและข้อความ */
+}
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    gap: 1vw; /* ระยะห่างระหว่างรูปภาพ */
+    margin-top: -2vw;
+    padding-bottom: 3vw;
+}
+.carousel-image{
+    width: 15vw; /* กว้างเต็มหน้าจอ */
+    height: auto; /* ปรับความสูงอัตโนมัติ */
+}
+
+.wish{
+    align-items: center;
+}
+
+.img_wish {
+    width: 30vw; /* ขนาดรูปภาพ */
+    height: auto; /* ปรับความสูงอัตโนมัติ */
+    border-radius: 3vw; /* มุมโค้งของรูปภาพ */
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.map{
+    width: 100%;
+}
+
+.button_map{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw; /* เพิ่มระยะห่างด้านบน */
+    border-color: #121331; /* สีกรอบปุ่ม */
+    border-radius: 0.5vw; /* มุมโค้งของปุ่ม */
+    padding-bottom: 8vw; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+.button_text{
+    border-radius: 1.5vw; /* มุมโค้งของปุ่ม */
+}
+
+.MARRIAGE {
+    font-family: "Dancing Script", cursive;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+.OCCURRING {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2vw;
+    margin-top: 3vw; /* เพิ่มระยะห่างด้านบน */
+}
+
+.countdown {
+    margin-bottom: 1.5vw; /* แปลงจาก 3% */
+    clear: both; /* เพิ่ม clear: both; */
+    flex-direction: column; /* จัดให้อยู่ในคอลัมน์เดียวกัน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+}
+
+.time-block {
+    text-align: center;
+    margin: 0 2vw;
+}
+
+.time-block span {
+    font-size: 6vw; /* แปลงจาก 2em */
+    font-weight: bold;
+    font-family: "Dancing Script", cursive; /* เปลี่ยนฟอนต์เป็น Dancing Script */
+    color: white;
+    border-radius: 1.5vw; /* มุมโค้งของกรอบ */
+    padding: 2vw; /* ระยะห่างภายในกรอบ */
+    width: 10vw; /* ความกว้างของกรอบ */
+    text-align: center;
+}
+
+.time-block p {
+    margin-top: 3vw; /* ระยะห่างระหว่างตัวเลขกับข้อความ */
+    font-size: 1.5vw; /* ขนาดข้อความ */
+    color: white;
+}
+
+.section-box {
+    border: 0.05vw solid #ccc; /* แปลงจาก 0.1% */
+    border-radius: 0.5vw; /* แปลงจาก 1% */
+    padding: 1vw; /* แปลงจาก 2% */
+    margin-bottom: 1vw; /* แปลงจาก 2% */
+    background-color: #f9f9f9;
+}
+
+
+
+@media (max-width: 768px) {
+    #header-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 80vw; /* เพิ่มระยะห่างด้านบน */
+    }
+
+    .MARRIAGE {
+        font-family: "Dancing Script", cursive;
+        font-size: 12vw;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 1vw;
+    }
+    
+    .icon {
+        width: 10vw; /* ขนาดไอคอนใหญ่ขึ้น */
+        height: 10vw; /* ขนาดไอคอนใหญ่ขึ้น */
+    }
+
+    .OCCURRING {
+        font-family: "Sour Gummy", sans-serif;
+        font-size: 5vw;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 2vw;
+        margin-top: 10vw;
+    }
+
+    #countdown {
+        display: grid;
+        grid-template-columns: repeat(2, auto); /* 2 คอลัมน์ */
+        position: absolute;
+        top: 100vw; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+        left: 50%; /* จัดให้อยู่ตรงกลางแนวนอน */
+        font-size: 2vw; /* ปรับขนาดข้อความ */
+        text-align: center;
+        font-family: "Sour Gummy", sans-serif; /* ใช้ฟอนต์ Sour Gummy */
+        display: grid;
+        grid-template-columns: repeat(2, auto); /* 2 คอลัมน์ */
+        justify-content: center;
+        align-items: center;
+        font-family: monospace;
+        margin-top: 30vw;
+        gap: 5vw;
+    }
+    
+    
+    .time-block span {
+        font-size: 8vw; /* ปรับขนาดตัวเลขให้ใหญ่ขึ้น */
+        font-weight: bold;
+        font-family: "Dancing Script", cursive;
+        margin-bottom: 0; /* ลบ margin ด้านล่างที่ไม่จำเป็น */
+        margin-top: 0; /* ลบ margin ด้านบนที่ไม่จำเป็น */
+        line-height: 1.5; /* ปรับ line-height เพื่อให้ตัวเลขอยู่ตรงกลางมากขึ้น */
+    }
+    
+    .time-block p {
+        margin-top: 1vw; /* ลดระยะห่างระหว่างตัวเลขกับข้อความ */
+        font-size: 4vw; /* ขนาดข้อความ */
+        color: white;
+    }
+
+
+    .Head_Web {
+        flex-direction: row; /* เปลี่ยนจากแนวนอนเป็นแนวตั้ง */
+        align-items: center;
+    }
+
+    .name_OM {
+        margin-top: 5vw; /* เพิ่มระยะห่างด้านบน */
+        order: 1;
+    }
+
+    .image1 {
+        order: 2;
+        width: 35vw; /* ปรับขนาดรูปภาพให้พอดีกับมือถือ */
+        margin: 0; /* ลบ margin ที่อาจทำให้ภาพเบี้ยว */
+        margin-right: 8vw;
+        margin-top: 3vw; /* เพิ่มระยะห่างด้านบน */
+    }
+
+    .image2 {
+        margin-bottom: 5vw;
+        width: 20vw; /* ขยายรูปแหวนให้ใหญ่ขึ้นในมือถือ */
+    }
+
+    .name_POat,
+    .name_PMam {
+        font-size: 8vw; /* ปรับขนาดตัวอักษรให้ใหญ่ขึ้นในมือถือ */
+        margin-top: 5vw;
+    }
+
+    .name_and {
+        font-size: 5vw;
+    }
+
+    .name_and_Pmam {
+        font-size: 5vw;
+    }
+    
+    .schedule{
+        font-size: 4vw; /* ปรับขนาดตัวอักษรให้ใหญ่ขึ้นในมือถือ */
+    }
+
+    .img_schedule {
+        width: 60vw; /* ปรับขนาดรูปภาพให้พอดีกับมือถือ */
+        height: auto;
+        margin-top: 1vw; /* เพิ่มระยะห่างด้านบน */
+    }
+
+    .button_text{
+        width: 40vw; /* ปรับขนาดปุ่มให้ใหญ่ขึ้นในมือถือ */
+        border-radius: 2vw;
+    }
+}
+
+
+
